@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tutorial 1- Getting Started</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Tutorial 1- Getting Started">
+  <meta name="author" content="Jared Knowles">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="C:/Program Files/R/R-2.15.2/library/slidifyLibraries/libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="C:/Program Files/R/R-2.15.2/library/slidifyLibraries/libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="C:/Program Files/R/R-2.15.2/library/slidifyLibraries/libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="C:/Program Files/R/R-2.15.2/library/slidifyLibraries/libraries/highlighters/highlight/css/hemisu-light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="C:/Program Files/R/R-2.15.2/library/slidifyLibraries/libraries/widgets/quiz/js/jquery-1.7.min.js"><\/script>')</script> 
+  <script data-main="C:/Program Files/R/R-2.15.2/library/slidifyLibraries/libraries/frameworks/io2012/js/slides" 
+    src="C:/Program Files/R/R-2.15.2/library/slidifyLibraries/libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Tutorial 1- Getting Started</h1>
+    <h2>DPI R Bootcamp / 2013</h2>
+    <p>Jared Knowles<br/>Research Analyst, Wisconsin DPI</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
+</style>
+
+<h2>Overview</h2>
+
+<ul>
+<li>What is R?</li>
+<li>What is RStudio?</li>
+<li>How does it work?</li>
+<li>What makes the language different?</li>
+<li>Why learn it?
+<p align="center"><img src="img/dpilogo.png" height="81" width="138"></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R is an Open Source (and freely available) environment for statistical computing and graphics</li>
+<li>Available for Windows, Mac OS X, and Linux</li>
+<li>R is being actively developed with two major releases per year and dozens of releases of add on packages</li>
+<li>R can be extended with &#39;packages&#39; that contain data, code, and documentation to add new functionality</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>What Does it Look Like?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The R workspace in RStudio</p>
+
+<p align="center"><img src="img/workspacescreen.png" height="500" width="700"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>A Bit of Histo<strong>R</strong>y</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R is a flavor of the <strong>S</strong> computer language</li>
+<li>S was developed by John Chambers at Bell Labs in the late 1970s</li>
+<li>In 1988 it was rewritten from a Fortran base to a C base</li>
+<li>Version 4 of S, the latest version, was finished in 1998, and won several awards</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>John Chambers on the Philosophy of S</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><p><q>[W]e wanted users to be able to begin in an interactive environment, where they did not consciously think of themselves as <span class = 'red'>programming</span>. Then as their needs became  clearer and their sophistication increased, they should be  able to <span class = 'red'>slide gradually</span> into programming, when the language and system aspects would become more important.</p></q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>R is Born</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>1991 in New Zealand Ross Ihaka and Robert Gentleman create R</li>
+<li>Named for their first initials</li>
+<li>R is made public in 1993, and in 1995 Martin Maechler convinces the creators to make it open source with the GNU General Public License</li>
+<li>1997 R Core Group is formed--the maintainers and main developers of R (about 14 members today)</li>
+<li>2000 version 1.0.0 ships</li>
+<li>2012 version 2.15.2 is available (2.16.0 is due out early in 2013)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Why Use R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R is a common tool among data experts at major universities</li>
+<li>No need to go through procurement, R can be installed in any environment on any machine and used with no licensing or agreements needed</li>
+<li>R source code is very readable to increase transparency of processes</li>
+<li>R code is easily borrowed from and shared with others</li>
+<li>R is incredibly flexible and can be adapted to specific local needs</li>
+<li>R is under incredibly active development, improving greatly, and supported wildly by both professional and academic developers</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Thoughts on Free</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R is free in many senses
+
+<ol>
+<li>R can be run and used for any purpose, commercial or non-commercial, profit or not-for-profit</li>
+<li>R&#39;s source code is freely available so you can study how it works and adapt it to your needs.</li>
+<li>R is free to redistribute so you can share it with your <del>enemies</del>  friends</li>
+<li>R is free to modify and those modifications are free to redistribute and may be adopted by the rest of the community!</li>
+</ol></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>R Advantages Continued</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R is platform agnostic - Linux, Mac, PC, server, desktop, etc.</li>
+<li>R can output results in a variety of formats</li>
+<li>R can build routines straight out of a database for common and universal reporting</li>
+</ul>
+
+<h3>R Can Compliment Other Tools</h3>
+
+<ul>
+<li>R plays nicely with data from Stata, SPSS, SAS and others</li>
+<li>R can check work, produce output, visualize results from other programs</li>
+<li>R can do bleeding edge analyses that aren&#39;t available in proprietary packages yet</li>
+<li>R is becoming more prevalent in undergraduate statistics courses - more and more potential employees are learning it each year</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>R&#39;s Popularity</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>R has recently passed Stata on Google Scholar hits and it is catching up to the two major players SPSS and SAS</p>
+
+<p align="center"><img src="img/googlescholar.png" height="500" width="700"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>R Has an Active Web Presence</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>R is linked to from more and more sites </p>
+
+<p align="center"><img src="img/sitelinks.png" height="500" width="700"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>R Extensions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>These links come from the explosion of add-on packages to R</p>
+
+<p align="center"><img src="img/addons.png" height="500" width="700"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>R Has an Active Community</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Usage of the R listserv for help has really exploded recently</p>
+
+<p align="center"><img src="img/rlistserv.png" height="500" width="700"></p>
+
+<p>Data from Bob Muenchen <a href="http://r4stats.com/articles/popularity/">available online</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>R&#39;s Drawbacks</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R is based on S, which is close to 40 years old</li>
+<li>R only has features that the community contributes</li>
+<li>Not the ideal solution to all problems</li>
+<li>R is a programming language and not a software package--steeper learning curve</li>
+<li>R can be much slower than compiled languages</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>R Vocabulary</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><strong>packages</strong> are add on features to R that include data, new functions and methods, and extended capabilities. Think of them as ``apps&#39;&#39; on your phone. We&#39;ve already installed several!</li>
+<li><strong>terminal</strong> this is the main window of R where you enter commands</li>
+<li><strong>scripts</strong> these are where you store commands to be run in the terminal later, like syntax files in SPSS or .do files in Stata</li>
+<li><strong>functions</strong> commands that do something to an object in R</li>
+<li><strong>dataframe</strong> the main element for statistical purposes, an object with rows and columns that includes numbers, factors, and other data types</li>
+<li><strong>workspace</strong> the working memory of R where all objects are stored</li>
+<li><strong>vector</strong> the basic unit of data in R</li>
+<li><strong>symbols</strong> used to name and store objects or to designate operations/functions</li>
+<li><strong>attributes</strong> determine how functions act on objects</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Components of an R Setup</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><strong>R</strong> - R works in the command line of any OS, but also comes with a basic GUI to operate on its own in Windows and Mac <a href="http://cran.r-project.org/">download</a></li>
+<li><strong>RStudio</strong> - a much better way to work in R that allows editing of scripts, operation of R, viewing of the workspace, and R help all on one screen <a href="http://rstudio.org/download/">download</a></li>
+<li>We&#39;ve already installed and configured these, but what might you want to use to go further after the Bootcamp is complete?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Advanced R Setup</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><strong>LaTeX</strong> - for producing documents using R this is less necessary, but still useful. download <a href="http://miktex.org/2.9/setup">WIN</a> <a href="http://www.tug.org/mactex/2011/">MAC</a></li>
+<li><strong>Dev Tools for R</strong> - on Windows this is Rtools, on Linux and Mac it is installing the development mode of R download <a href="http://www.stats.ox.ac.uk/pub/Rtools/R215x.html">WIN</a> <a href="http://cran.r-project.org/bin/macosx/tools/">MAC</a></li>
+<li><strong>Git</strong> - for version control, sharing code, and collaboration this is essential. It integrates well with RStudio. <a href="http://git-scm.com/download">download</a></li>
+<li><strong>pandoc</strong> - for converting output into other formats for sharing with non-user<strong>R</strong>s! <a href="http://johnmacfarlane.net/pandoc/installing.html">download</a></li>
+<li><strong>ImageMagick</strong> - for creating more flexible graphics in R, including animations! <a href="http://www.imagemagick.org/script/index.php">download</a> <a href="http://www.graphicsmagick.org/">alternate</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Open Source Toolchain</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This really represents a completely open source toolchain to going from a data analysis idea, to a full fledged professional report</li>
+<li>These tools are free, updated regularly, and available on <strong>any</strong> platform <strong>today</strong></li>
+<li>This toolchain is scriptable, reproducible, and has been around for quite some time so it is stable and robust</li>
+<li>Lots of other programming languages use aspects of this toolchain</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Some Notes about Maintaining R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Adding packages onto R means you also have to update them with the <code>update.packages()</code> command</li>
+<li>Package updates are at the whim of the package developer which may be a corporation, an R Core Member, an academic, or me</li>
+<li>Upgrading R on Windows, which is on a 6 month release cycle, is not straightforward yet, but there are lots of how-to guides online</li>
+<li>Generally, upgrading is recommended as there are usually a lot of performance enhancements, even with minor (2.15.X) releases</li>
+<li>We will walk through this a bit later, but remember that the flexibility in R means that users probably need to be self-supported in your organization</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Self-help</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>In the spirit of open-source R is very much a self-guided tool</li>
+<li>Let&#39;s see, type: <code>?summary</code></li>
+<li>Now type: <code>??regression</code></li>
+<li>For tricky questions, funky error messages (there are many), and other issues, use Google (include &quot;in R&quot; to the end of your query)</li>
+<li>We can also use <a href="http://www.rseek.org/">RSeek</a> - the search engine just for R!</li>
+<li>StackOverflow has become a great resource with many questions for many specific packages in R, and a rating system for answers</li>
+<li>A number of R Core members contribute there</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Self-help (2)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Sometimes R Help can be a bit prickly and unfriendly...</li>
+<li>The most important part of getting help is being able to ask your question with a reproducible example (i.e. some short simulated data and code that doesn&#39;t do what you want)</li>
+<li>Like this:</li>
+</ul>
+
+<pre><code class="r">foo &lt;- c(1, &quot;b&quot;, 5, 7, 0)
+bar &lt;- c(1, 2, 3, 4, 5)
+foo + bar
+</code></pre>
+
+<pre><code>Error: non-numeric argument to binary operator
+</code></pre>
+
+<ul>
+<li>For R Help etiquette (for the tough problems) see <a href="https://github.com/hadley/devtools/wiki/Reproducibility">the great advice here</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Let&#39;s Look at RStudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>RStudio has made R more accessible and easy to use than ever!</li>
+<li>Open up <strong>Tutorial1.R</strong></li>
+<li>4 panels, various tabs</li>
+<li>Help, plots, file structure</li>
+<li>Workspace, history, version control</li>
+<li>Working files</li>
+<li>The R Console</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>The Data Frame</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>What happens when you type:</li>
+</ul>
+
+<pre><code class="r">data(mtcars)
+mtcars
+</code></pre>
+
+<pre><code>               mpg cyl  disp  hp drat    wt  qsec vs am gear carb
+</code></pre>
+
+<p>Mazda RX4         21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag     21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710        22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive    21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout 18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2
+Valiant           18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1
+Duster 360        14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4
+Merc 240D         24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2</p>
+
+<ul>
+<li>This is how we&#39;ll look at R commands and their results the rest of the way</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>A Data Frame</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>A data frame is a lot like a traditional spreadsheet and is the central feature of data analysis in R</li>
+<li>You&#39;ll see we have names, stored with numbers, which other programming languages are not so keen on doing</li>
+<li>This is really handy, and data frames are the primary method we use to store data, manipulate data, etc.</li>
+<li>The difference between a data frame and spreadsheet in Excel is that in almost all cases, everything we do to the data frame will either be by entire row, or by entire column</li>
+<li>This sounds limiting, but in fact, it is incredibly powerful!</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>R As A Calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">2 + 2  ## add numbers
+</code></pre>
+
+<pre><code>[1] 4
+</code></pre>
+
+<pre><code class="r">2 * pi  #multiply by a constant
+</code></pre>
+
+<pre><code>[1] 6.283
+</code></pre>
+
+<pre><code class="r">7 + runif(1, min = 0, max = 1)  #add a random variable
+</code></pre>
+
+<pre><code>[1] 7.005
+</code></pre>
+
+<pre><code class="r">4^4  # powers
+</code></pre>
+
+<pre><code>[1] 256
+</code></pre>
+
+<pre><code class="r">sqrt(4^4)  # functions
+</code></pre>
+
+<pre><code>[1] 16
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Arithmetic Operators</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>In addition to the obvious <code>+</code> <code>-</code> <code>=</code> <code>/</code> <code>*</code> and exponential <code>^</code>, there is also integer division <code>%/%</code> and remainder in integer division (known as modulo arithmetic) <code>%%</code></li>
+</ul>
+
+<pre><code class="r">2 + 2
+</code></pre>
+
+<pre><code>[1] 4
+</code></pre>
+
+<pre><code class="r">2/2
+</code></pre>
+
+<pre><code>[1] 1
+</code></pre>
+
+<pre><code class="r">2 * 2
+</code></pre>
+
+<pre><code>[1] 4
+</code></pre>
+
+<pre><code class="r">2^2
+</code></pre>
+
+<pre><code>[1] 4
+</code></pre>
+
+<pre><code class="r">2 == 2
+</code></pre>
+
+<pre><code>[1] TRUE
+</code></pre>
+
+<pre><code class="r">23%/%2
+</code></pre>
+
+<pre><code>[1] 11
+</code></pre>
+
+<pre><code class="r">23%%2
+</code></pre>
+
+<pre><code>[1] 1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Other Key Symbols</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><code>&lt;-</code> is the assignment operator, it declares something is something else</li>
+</ul>
+
+<pre><code class="r">foo &lt;- 3
+foo
+</code></pre>
+
+<pre><code>[1] 3
+</code></pre>
+
+<ul>
+<li><code>:</code> is the sequence operator</li>
+</ul>
+
+<pre><code class="r">1:10
+</code></pre>
+
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10
+</code></pre>
+
+<pre><code class="r"># it increments by one
+a &lt;- 100:120
+a
+</code></pre>
+
+<pre><code> [1] 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116
+[18] 117 118 119 120
+</code></pre>
+
+<ul>
+<li><strong>This is handy</strong></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Comments in R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><strong>#</strong> denotes a comment in R</li>
+<li>Anything after the <strong>#</strong> is not evaluated and ignored in R</li>
+<li>This is handy for making things reproducible</li>
+</ul>
+
+<pre><code class="r"># Something I want to keep from R
+# Like my secret from the R engine
+# Maybe intended for a human and not the computer
+# Like: Look at this cool plot!
+
+myplot(readSS,mathSS,data=df)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>R Advanced Math</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R also supports advanced mathematical features and expressions</li>
+<li>R can take integrals and derivatives and express complex functions</li>
+<li><p>Easiest of all, R can generate distributions of data very easily</p>
+
+<ul>
+<li>e.g. <code>rnorm(100)</code> or <code>rbinom(100)</code></li>
+</ul></li>
+<li><p>This comes in handy when writing examples and building analyses because it is trivial to generate a synthetic piece of data to use as an example</p></li>
+<li><p>Go ahead, try typing <code>hist(rnorm(10000))</code> into RStudio</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>Using the Workspace</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>To do more we need to learn how to manipulate the &#39;workspace&#39;.</li>
+<li>This includes all the vectors, datasets, and functions stored in memory.</li>
+<li>All R objects are stored in the memory of the computer, limiting the available space for calculation to the size of the RAM on your machine.</li>
+<li>R makes organizing the workspace easy.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>Using the Workspace (2)</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">x &lt;- 5  #store a variable with &lt;-
+x  #print the variable
+</code></pre>
+
+<pre><code>[1] 5
+</code></pre>
+
+<pre><code class="r">z &lt;- 3
+ls()  #list all variables
+</code></pre>
+
+<pre><code> [1] &quot;a&quot;          &quot;bar&quot;        &quot;foo&quot;        &quot;inputFile&quot;  &quot;knit_deck&quot; 
+ [6] &quot;mtcars&quot;     &quot;outputFile&quot; &quot;postFile&quot;   &quot;x&quot;          &quot;z&quot;         
+</code></pre>
+
+<pre><code class="r">ls.str()  #list and describe variables
+</code></pre>
+
+<pre><code>a :  int [1:21] 100 101 102 103 104 105 106 107 108 109 ...
+bar :  num [1:5] 1 2 3 4 5
+foo :  num 3
+inputFile :  chr &quot;Tutorial1_Intro.Rmd&quot;
+knit_deck :  logi TRUE
+mtcars : &#39;data.frame&#39;:  32 obs. of  11 variables:
+ $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+ $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
+ $ disp: num  160 160 108 258 360 ...
+ $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...
+ $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+ $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...
+ $ qsec: num  16.5 17 18.6 19.4 17 ...
+ $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...
+ $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
+ $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
+ $ carb: num  4 4 1 1 2 1 4 2 2 4 ...
+outputFile :  chr &quot;Tutorial1_Intro.md&quot;
+postFile :  chr &quot;Tutorial1_Intro.Rmd&quot;
+x :  num 5
+z :  num 3
+</code></pre>
+
+<pre><code class="r">rm(x)  # delete a variable
+ls()
+</code></pre>
+
+<pre><code>[1] &quot;a&quot;          &quot;bar&quot;        &quot;foo&quot;        &quot;inputFile&quot;  &quot;knit_deck&quot; 
+[6] &quot;mtcars&quot;     &quot;outputFile&quot; &quot;postFile&quot;   &quot;z&quot;         
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>R as a Language</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R is more than statistical software, it is a computer language</li>
+<li>Like any language it has rules (some poorly enforced), and conventions</li>
+<li>You will learn more as you go, but we&#39;ll go over a few to start</li>
+</ul>
+
+<ol>
+<li>Case sensitivity matters</li>
+</ol>
+
+<pre><code class="r">a &lt;- 3
+A &lt;- 4
+print(c(a, A))
+</code></pre>
+
+<pre><code>[1] 3 4
+</code></pre>
+
+<ul>
+<li><font color="red"><strong>a</strong> &#8800; <strong>A</strong></font> 
+
+<ol>
+<li>What happens if I type <strong>print(a,A)</strong>?</li>
+</ol></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2><code>c</code> is our friend</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>So what does <strong>c</strong> do?</li>
+</ul>
+
+<pre><code class="r">A &lt;- c(3, 4)
+print(A)
+</code></pre>
+
+<pre><code>[1] 3 4
+</code></pre>
+
+<ul>
+<li><code>c</code> stands for concatenate and allows vectors to have multiple elements</li>
+<li>If you ever need two elements in a vector, you need to wrap it up in <code>c</code>, which is one of the most used functions you will ever use</li>
+<li><code>c</code> is important to put any vector together, but remember that objects within a vector must all be of the same type</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Language</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>In language there are a number of ways to say the same thing
+
+<ul>
+<li> <font color="green">The dog chased the cat.</font> </li>
+<li> <font color ="blue">The cat was chased by the dog.</font></li>
+<li> <font color ="red">By the dog, the cat was chased.</font></li>
+</ul></li>
+<li>Some ways are more elegant than others, all convey the same message. </li>
+</ul>
+
+<pre><code class="r">a &lt;- runif(100)  # Generate 100 random numbers
+b &lt;- runif(100)  # 100 more
+c &lt;- NULL  # Setup for loop (declare variables)
+for (i in 1:100) {
+    # Loop just like in Java or C
+    c[i] &lt;- a[i] * b[i]
+}
+d &lt;- a * b
+identical(c, d)  # Test equality
+</code></pre>
+
+<pre><code>[1] TRUE
+</code></pre>
+
+<ul>
+<li>Which is nicer? <strong>c</strong> or <strong>d</strong>?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>More Language <del>Bugs</del> Features</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R is maddeningly inconsistent in it&#39;s naming conventions
+
+<ul>
+<li>Some functions are <code>camelCase</code>; others <code>are.dot.separated</code>; others <code>use_underscores</code></li>
+<li>Function results are stored in a variety of ways across function implementations</li>
+<li>R has multiple graphics packages that different functions use for default plot construction (<code>base</code>, <code>grid</code>, <code>lattice</code>, and <code>ggplot2</code>)</li>
+<li>R has multiple packages and functions to do the same analysis as well, though some standardization has started to occur</li>
+<li>Be flexible and be aware of R&#39;s flexibility</li>
+</ul></li>
+</ul>
+
+<pre><code>Warning: cannot open compressed file &#39;data/smalldata.rda&#39;, probable reason
+&#39;No such file or directory&#39;
+</code></pre>
+
+<pre><code>Error: cannot open the connection
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Objects</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Everything in R is an object - even functions</li>
+<li>Objects can be manipulated many ways</li>
+<li>A common example is applying the <code>summary</code> function to a variety of object types and seeing how it adapts</li>
+</ul>
+
+<pre><code class="r">summary(df[, 28:31])  #summary look at df object
+</code></pre>
+
+<pre><code>Error: object of type &#39;closure&#39; is not subsettable
+</code></pre>
+
+<pre><code class="r">summary(df$readSS)  #summary of a single column
+</code></pre>
+
+<pre><code>Error: object of type &#39;closure&#39; is not subsettable
+</code></pre>
+
+<p>-The <code>$</code> says to look for object <strong>readSS</strong> in object <strong>df</strong></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>Graphics too</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(ggplot2) # Load graphics Package
+library(eeptools)
+qplot(readSS,mathSS,data=df,geom=&#39;point&#39;,alpha=I(0.3))+theme_dpi()+
+  opts(title=&#39;Test Score Relationship&#39;)+
+  geom_smooth()
+</code></pre>
+
+<pre><code>Error: ggplot2 doesn&#39;t know how to deal with data of class function
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>Handling Data in R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R handles data differently than many other statistical packages</li>
+<li>In R, all elements are objects</li>
+</ul>
+
+<pre><code class="r">length(unique(df$school))
+</code></pre>
+
+<pre><code>Error: object of type &#39;closure&#39; is not subsettable
+</code></pre>
+
+<pre><code class="r">length(unique(df$stuid))
+</code></pre>
+
+<pre><code>Error: object of type &#39;closure&#39; is not subsettable
+</code></pre>
+
+<pre><code class="r">uniqstu &lt;- length(unique(df$stuid))
+</code></pre>
+
+<pre><code>Error: object of type &#39;closure&#39; is not subsettable
+</code></pre>
+
+<pre><code class="r">uniqstu
+</code></pre>
+
+<pre><code>Error: object &#39;uniqstu&#39; not found
+</code></pre>
+
+<ul>
+<li>Results of function calls can be stored</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-39" style="background:;">
+  <hgroup>
+    <h2>Special Operators</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The comparison operators <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>==</code>, and <code>!=</code> are used to compare values across vectors</li>
+</ul>
+
+<pre><code class="r">big &lt;- c(9, 12, 15, 25)
+small &lt;- c(9, 3, 4, 2)
+# Give us a nice vector of logical values
+big &gt; small
+</code></pre>
+
+<pre><code>[1] FALSE  TRUE  TRUE  TRUE
+</code></pre>
+
+<pre><code class="r">big = small
+# Oops--don&#39;t do this, reassigns big to small
+print(big)
+</code></pre>
+
+<pre><code>[1] 9 3 4 2
+</code></pre>
+
+<pre><code class="r">print(small)
+</code></pre>
+
+<pre><code>[1] 9 3 4 2
+</code></pre>
+
+<ul>
+<li>Comparison operators can be tricky, so to keep it straight never use <code>=</code> or <code>==</code> to assign anything, always use <code>&lt;-</code></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-40" style="background:;">
+  <hgroup>
+    <h2>Special Operators II</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The best way to evaluate these objects is to use brackets <code>[]</code> to avoid confusion</li>
+</ul>
+
+<pre><code class="r">big &lt;- c(9, 12, 15, 25)
+big[big == small]
+</code></pre>
+
+<pre><code>[1] 9
+</code></pre>
+
+<pre><code class="r"># Returns values where the logical vector is true
+big[big &gt; small]
+</code></pre>
+
+<pre><code>[1] 12 15 25
+</code></pre>
+
+<pre><code class="r">big[big &lt; small]  # Returns an empty set
+</code></pre>
+
+<pre><code>numeric(0)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-41" style="background:;">
+  <hgroup>
+    <h2>Special operators (III)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The <code>%in%</code> operator determines whether each value in the left operand can be matched with one of the values in the right operand.</li>
+</ul>
+
+<pre><code class="r">big &lt;- c(9, 12, 15, 25)
+small &lt;- c(9, 12, 15, 25, 9, 1, 3)
+big[small %in% big]
+</code></pre>
+
+<pre><code>[1]  9 12 15 25 NA
+</code></pre>
+
+<ul>
+<li>9, 12, 15, and 25 all appear in <code>big</code>, but <code>small</code> also has objects that do not appear in <code>big</code> and so an NA is returned</li>
+<li>What if we reverse this?</li>
+</ul>
+
+<pre><code class="r">big[big %in% small]
+</code></pre>
+
+<pre><code>[1]  9 12 15 25
+</code></pre>
+
+<ul>
+<li>No <code>NA</code></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-42" style="background:;">
+  <hgroup>
+    <h2>Special operators (IV)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The logical operators <code>|</code> (or) and <code>&amp;</code> (and) can be used to combine two logical values and produce another logical value as the result. The operator <code>!</code> (not) negates a logical value. These operators allow complex conditions to be constructed.</li>
+</ul>
+
+<pre><code class="r">foo &lt;- c(&quot;a&quot;, NA, 4, 9, 8.7)
+!is.na(foo)  # Returns TRUE for non-NA
+</code></pre>
+
+<pre><code>[1]  TRUE FALSE  TRUE  TRUE  TRUE
+</code></pre>
+
+<pre><code class="r">class(foo)
+</code></pre>
+
+<pre><code>[1] &quot;character&quot;
+</code></pre>
+
+<pre><code class="r">a &lt;- foo[!is.na(foo)]
+a
+</code></pre>
+
+<pre><code>[1] &quot;a&quot;   &quot;4&quot;   &quot;9&quot;   &quot;8.7&quot;
+</code></pre>
+
+<pre><code class="r">class(a)
+</code></pre>
+
+<pre><code>[1] &quot;character&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-43" style="background:;">
+  <hgroup>
+    <h2>Special operators (V)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The operators <code>||</code> and <code>&amp;&amp;</code> are similar, but they combine two logical vectors. The comparison is performed element by element, so the result is also a logical vector.</li>
+</ul>
+
+<pre><code class="r">zap &lt;- c(1, 4, 8, 2, 9, 11)
+zap[zap &gt; 2 | zap &lt; 8]
+</code></pre>
+
+<pre><code>[1]  1  4  8  2  9 11
+</code></pre>
+
+<pre><code class="r">zap[zap &gt; 2 &amp; zap &lt; 8]
+</code></pre>
+
+<pre><code>[1] 4
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-44" style="background:;">
+  <hgroup>
+    <h2>Regular Expressions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R also supports a full suite of regular expressions</li>
+<li>This could be material for a full tutorial in a more advanced bootcamp</li>
+<li>If you know and use regex, then rest assured you can keep using it in R</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-45" style="background:;">
+  <hgroup>
+    <h2>R Data Modes</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R allows users to implement a number of different types of data</li>
+<li>The three basic data types are numeric data, character data, and logical data</li>
+<li>Vectors must be of one consistent type of data, so if you make a vector with multiple types, it generally defaults to being a character vector</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-46" style="background:;">
+  <hgroup>
+    <h2>Data Modes in R (numeric)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><strong>numeric</strong> vectors contain, as you would guess, numbers!</li>
+</ul>
+
+<pre><code class="r">is.numeric(A)
+</code></pre>
+
+<pre><code>[1] TRUE
+</code></pre>
+
+<pre><code class="r">class(A)
+</code></pre>
+
+<pre><code>[1] &quot;numeric&quot;
+</code></pre>
+
+<pre><code class="r">print(A)
+</code></pre>
+
+<pre><code>[1] 3 4
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-47" style="background:;">
+  <hgroup>
+    <h2>Data Modes (Character)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><strong>character</strong> is known as strings in other software, any characters that have no numeric meaning</li>
+</ul>
+
+<pre><code class="r">b &lt;- c(&quot;one&quot;, &quot;two&quot;, &quot;three&quot;)
+print(b)
+</code></pre>
+
+<pre><code>[1] &quot;one&quot;   &quot;two&quot;   &quot;three&quot;
+</code></pre>
+
+<pre><code class="r">is.numeric(b)
+</code></pre>
+
+<pre><code>[1] FALSE
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-48" style="background:;">
+  <hgroup>
+    <h2>Data Modes (Logical)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><strong>logical</strong> is TRUE or FALSE values, useful for logical testing and programming</li>
+<li>We&#39;ve already seen these returned when we have asked R a question before</li>
+</ul>
+
+<pre><code class="r">c &lt;- c(TRUE, TRUE, TRUE, FALSE, FALSE, TRUE)
+is.numeric(c)
+</code></pre>
+
+<pre><code>[1] FALSE
+</code></pre>
+
+<pre><code class="r">is.character(c)
+</code></pre>
+
+<pre><code>[1] FALSE
+</code></pre>
+
+<pre><code class="r">is.logical(c)  ## Results in a logical value
+</code></pre>
+
+<pre><code>[1] TRUE
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-49" style="background:;">
+  <hgroup>
+    <h2>Easier way</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Just ask R using the <code>class</code> function</li>
+</ul>
+
+<pre><code class="r">class(A)
+</code></pre>
+
+<pre><code>[1] &quot;numeric&quot;
+</code></pre>
+
+<pre><code class="r">class(b)
+</code></pre>
+
+<pre><code>[1] &quot;character&quot;
+</code></pre>
+
+<pre><code class="r">class(c)
+</code></pre>
+
+<pre><code>[1] &quot;logical&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-50" style="background:;">
+  <hgroup>
+    <h2>A Note on Vectors</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Vectors are collections of consistent data types</li>
+<li><strong>numeric</strong> can either be double or integer depending on the <em>bytes</em> size</li>
+<li><strong>logical</strong></li>
+<li><strong>character</strong></li>
+<li><strong>complex</strong></li>
+<li><strong>raw</strong></li>
+<li>All vectors must be consistent among types, but some data objects like data frames can combine multiple vectors of different types</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-51" style="background:;">
+  <hgroup>
+    <h2>Factor</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>A factor is a very special and sometimes frustrating data type in R</li>
+</ul>
+
+<pre><code class="r">myfac &lt;- factor(c(&quot;basic&quot;, &quot;proficient&quot;, &quot;advanced&quot;, &quot;minimal&quot;))
+class(myfac)
+</code></pre>
+
+<pre><code>[1] &quot;factor&quot;
+</code></pre>
+
+<pre><code class="r">myfac  # What order are the factors in?
+</code></pre>
+
+<pre><code>[1] basic      proficient advanced   minimal   
+Levels: advanced basic minimal proficient
+</code></pre>
+
+<ul>
+<li>What if we don&#39;t like the order these are in? Factor order is important for all kinds of things like plot type, regression output, and more</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-52" style="background:;">
+  <hgroup>
+    <h2>Ordering the Factor</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Ordered factors simply have an additional attribute explaining the order of the levels of a factor</li>
+<li>This is a useful shortcut when we want to preserve some of the meaning provided by the order</li>
+<li>Think cardinal data</li>
+</ul>
+
+<pre><code class="r">myfac_o &lt;- ordered(myfac, levels = c(&quot;minimal&quot;, &quot;basic&quot;, &quot;proficient&quot;, &quot;advanced&quot;))
+myfac_o
+</code></pre>
+
+<pre><code>[1] basic      proficient advanced   minimal   
+Levels: minimal &lt; basic &lt; proficient &lt; advanced
+</code></pre>
+
+<pre><code class="r">summary(myfac_o)
+</code></pre>
+
+<pre><code>   minimal      basic proficient   advanced 
+         1          1          1          1 
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-53" style="background:;">
+  <hgroup>
+    <h2>Reclassifying Factors</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Turning factors into other data types can be tricky. All factor levels have an underlying numeric structure.</li>
+</ul>
+
+<pre><code class="r">class(myfac_o)
+</code></pre>
+
+<pre><code>[1] &quot;ordered&quot; &quot;factor&quot; 
+</code></pre>
+
+<pre><code class="r">unclass(myfac_o)
+</code></pre>
+
+<pre><code>[1] 2 3 4 1
+attr(,&quot;levels&quot;)
+[1] &quot;minimal&quot;    &quot;basic&quot;      &quot;proficient&quot; &quot;advanced&quot;  
+</code></pre>
+
+<pre><code class="r">defac &lt;- unclass(myfac_o)
+defac
+</code></pre>
+
+<pre><code>[1] 2 3 4 1
+attr(,&quot;levels&quot;)
+[1] &quot;minimal&quot;    &quot;basic&quot;      &quot;proficient&quot; &quot;advanced&quot;  
+</code></pre>
+
+<ul>
+<li>What is wrong with this? Well--why would <code>minimal</code> be <code>2</code> and <code>basic</code> be <code>3</code>?</li>
+<li>Be careful! The best way to unpack a factor is to convert it to a character first.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-54" style="background:;">
+  <hgroup>
+    <h2>Defactor</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r"># From the eeptools package
+defac &lt;- function(x) {
+    x &lt;- as.character(x)
+    x
+}
+</code></pre>
+
+<pre><code class="r">defac(myfac_o)
+</code></pre>
+
+<pre><code>[1] &quot;basic&quot;      &quot;proficient&quot; &quot;advanced&quot;   &quot;minimal&quot;   
+</code></pre>
+
+<pre><code class="r">defac &lt;- defac(myfac_o)
+defac
+</code></pre>
+
+<pre><code>[1] &quot;basic&quot;      &quot;proficient&quot; &quot;advanced&quot;   &quot;minimal&quot;   
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-55" style="background:;">
+  <hgroup>
+    <h2>Convert to Numeric?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>What if we do want it to be numeric?</li>
+<li>The best way to do this is to recode the variable manually--we&#39;ll discuss this later</li>
+<li>You can try to convert it to numeric though, but do at your own risk:</li>
+</ul>
+
+<pre><code class="r">myfac_o
+</code></pre>
+
+<pre><code>[1] basic      proficient advanced   minimal   
+Levels: minimal &lt; basic &lt; proficient &lt; advanced
+</code></pre>
+
+<pre><code class="r">as.numeric(myfac_o)
+</code></pre>
+
+<pre><code>[1] 2 3 4 1
+</code></pre>
+
+<ul>
+<li>If we did not properly specify the order above, this would be wrong!</li>
+</ul>
+
+<pre><code class="r">myfac
+</code></pre>
+
+<pre><code>[1] basic      proficient advanced   minimal   
+Levels: advanced basic minimal proficient
+</code></pre>
+
+<pre><code class="r">as.numeric(myfac)
+</code></pre>
+
+<pre><code>[1] 2 4 1 3
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-56" style="background:;">
+  <hgroup>
+    <h2>Dates</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R has built-in ways to handle dates</li>
+<li>See <code>lubridate</code> package for more advanced functionality including mathematical operations on dates</li>
+</ul>
+
+<pre><code class="r">mydate &lt;- as.Date(&quot;7/20/2012&quot;, format = &quot;%m/%d/%Y&quot;)
+# Input is a character string and a parser
+class(mydate)  # this is date
+</code></pre>
+
+<pre><code>[1] &quot;Date&quot;
+</code></pre>
+
+<pre><code class="r">weekdays(mydate)  # what day of the week is it?
+</code></pre>
+
+<pre><code>[1] &quot;Friday&quot;
+</code></pre>
+
+<pre><code class="r">mydate + 30  # Operate on dates
+</code></pre>
+
+<pre><code>[1] &quot;2012-08-19&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-57" style="background:;">
+  <hgroup>
+    <h2>More Dates</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r"># We can parse other formats of dates
+mydate2 &lt;- as.Date(&quot;8-5-1988&quot;, format = &quot;%d-%m-%Y&quot;)
+mydate2
+</code></pre>
+
+<pre><code>[1] &quot;1988-05-08&quot;
+</code></pre>
+
+<pre><code class="r">
+mydate - mydate2
+</code></pre>
+
+<pre><code>Time difference of 8839 days
+</code></pre>
+
+<pre><code class="r"># Can add and subtract two date objects
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-58" style="background:;">
+  <hgroup>
+    <h2>A few notes on dates</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R converts all dates to numeric values, like Excel and other languages</li>
+<li>The origin date in R is January 1, 1970</li>
+</ul>
+
+<pre><code class="r">as.numeric(mydate)  # days since 1-1-1970
+</code></pre>
+
+<pre><code>[1] 15541
+</code></pre>
+
+<pre><code class="r">as.Date(56, origin = &quot;2013-4-29&quot;)  # we can set our own origin
+</code></pre>
+
+<pre><code>[1] &quot;2013-06-24&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-59" style="background:;">
+  <hgroup>
+    <h2>Other Classes</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R classes can be specified for any special purpose</li>
+<li>Like linear models</li>
+</ul>
+
+<pre><code class="r">b &lt;- rnorm(5000)
+c &lt;- runif(5000)
+a &lt;- b + c
+mymod &lt;- lm(a ~ b)
+class(mymod)
+</code></pre>
+
+<pre><code>[1] &quot;lm&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-60" style="background:;">
+  <hgroup>
+    <h2>Why care so much about classes?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Classes determine what you can and can&#39;t do with objects</li>
+<li>Different classes have different computational times associated with them, so the choice can affect the optimization of the code</li>
+<li>Classes allow you to keep projects/data organized</li>
+<li><strong>Because R makes you care</strong></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-61" style="background:;">
+  <hgroup>
+    <h2>Data Structures in R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R has a number of basic data classes as well as arbitrary specialized object types for various purposes</li>
+<li><strong>vectors</strong> are the basic data class in R and can be thought of as a single column of data (even a column of length 1)</li>
+<li><strong>matrices and arrays</strong> are rows and columns of all the same mode data</li>
+<li><strong>dataframes</strong> are rows and columns where the columns can represent different data types</li>
+<li><strong>lists</strong> are arbitrary combinations of disparate object types in R</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-62" style="background:;">
+  <hgroup>
+    <h2>Vectors</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Everything is a vector in R, even single numbers</li>
+<li>Single objects are &quot;atomic&quot; vectors</li>
+</ul>
+
+<pre><code class="r">print(1)
+</code></pre>
+
+<pre><code>[1] 1
+</code></pre>
+
+<pre><code class="r"># The 1 in braces means this element is a vector of length 1
+print(&quot;This tutorial is awesome&quot;)
+</code></pre>
+
+<pre><code>[1] &quot;This tutorial is awesome&quot;
+</code></pre>
+
+<pre><code class="r"># This is a vector of length 1 consisting of a single &#39;string of
+# characters&#39;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-63" style="background:;">
+  <hgroup>
+    <h2>Vectors 2</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">print(LETTERS)
+</code></pre>
+
+<pre><code> [1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot; &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; &quot;K&quot; &quot;L&quot; &quot;M&quot; &quot;N&quot; &quot;O&quot; &quot;P&quot; &quot;Q&quot;
+[18] &quot;R&quot; &quot;S&quot; &quot;T&quot; &quot;U&quot; &quot;V&quot; &quot;W&quot; &quot;X&quot; &quot;Y&quot; &quot;Z&quot;
+</code></pre>
+
+<pre><code class="r"># This vector has 26 character elements
+print(LETTERS[6])
+</code></pre>
+
+<pre><code>[1] &quot;F&quot;
+</code></pre>
+
+<pre><code class="r"># The sixth element of this vector has length 1
+length(LETTERS[6])
+</code></pre>
+
+<pre><code>[1] 1
+</code></pre>
+
+<pre><code class="r"># The length of that element is a number with length 1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-64" style="background:;">
+  <hgroup>
+    <h2>Matrices</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Matrices are combinations of vectors of the same length and data type</li>
+<li>We can have numeric matrices, character matrices, or logical matrices</li>
+<li>Can&#39;t mix types</li>
+</ul>
+
+<pre><code class="r">mymat &lt;- matrix(1:36, nrow = 6, ncol = 6)
+rownames(mymat) &lt;- LETTERS[1:6]
+colnames(mymat) &lt;- LETTERS[7:12]
+class(mymat)
+</code></pre>
+
+<pre><code>[1] &quot;matrix&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-65" style="background:;">
+  <hgroup>
+    <h2>Matrices II</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">rownames(mymat)
+</code></pre>
+
+<pre><code>[1] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; &quot;E&quot; &quot;F&quot;
+</code></pre>
+
+<pre><code class="r">colnames(mymat)
+</code></pre>
+
+<pre><code>[1] &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; &quot;K&quot; &quot;L&quot;
+</code></pre>
+
+<pre><code class="r">mymat
+</code></pre>
+
+<pre><code>  G  H  I  J  K  L
+A 1  7 13 19 25 31
+B 2  8 14 20 26 32
+C 3  9 15 21 27 33
+D 4 10 16 22 28 34
+E 5 11 17 23 29 35
+F 6 12 18 24 30 36
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-66" style="background:;">
+  <hgroup>
+    <h2>More Matrices</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>We can add to matrices</li>
+</ul>
+
+<pre><code class="r">dim(mymat)  # We have 6 rows and 6 columns
+</code></pre>
+
+<pre><code>[1] 6 6
+</code></pre>
+
+<pre><code class="r">myvec &lt;- c(5, 3, 5, 6, 1, 2)
+length(myvec)  # What happens when you do dim(myvec)?
+</code></pre>
+
+<pre><code>[1] 6
+</code></pre>
+
+<pre><code class="r">newmat &lt;- cbind(mymat, myvec)
+newmat
+</code></pre>
+
+<pre><code>  G  H  I  J  K  L myvec
+A 1  7 13 19 25 31     5
+B 2  8 14 20 26 32     3
+C 3  9 15 21 27 33     5
+D 4 10 16 22 28 34     6
+E 5 11 17 23 29 35     1
+F 6 12 18 24 30 36     2
+</code></pre>
+
+<ul>
+<li>Dataframes work similarly</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-67" style="background:;">
+  <hgroup>
+    <h2>Matrix Functions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>We can do some basic math to matrices as well, like correlations</li>
+</ul>
+
+<pre><code class="r">foo.mat &lt;- matrix(c(rnorm(100), runif(100), runif(100), rpois(100, 2)), ncol = 4)
+head(foo.mat)
+</code></pre>
+
+<pre><code>        [,1]     [,2]    [,3] [,4]
+[1,] -0.1455 0.946583 0.67718    4
+[2,]  0.3746 0.286182 0.51514    3
+[3,]  0.1324 0.877679 0.06144    2
+[4,]  0.6075 0.661667 0.13387    0
+[5,]  0.5147 0.259139 0.90112    3
+[6,]  0.2519 0.007189 0.79541    1
+</code></pre>
+
+<pre><code class="r">cor(foo.mat)
+</code></pre>
+
+<pre><code>         [,1]     [,2]     [,3]     [,4]
+[1,]  1.00000 -0.13128  0.04215 -0.11503
+[2,] -0.13128  1.00000 -0.06346 -0.07017
+[3,]  0.04215 -0.06346  1.00000  0.04977
+[4,] -0.11503 -0.07017  0.04977  1.00000
+</code></pre>
+
+<ul>
+<li>The result is a matrix itself, but we can force it to be something else</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-68" style="background:;">
+  <hgroup>
+    <h2>Converting Matrices</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Let&#39;s make a matrix be a dataframe</li>
+</ul>
+
+<pre><code class="r">mycorr &lt;- cor(foo.mat)
+class(mycorr)
+</code></pre>
+
+<pre><code>[1] &quot;matrix&quot;
+</code></pre>
+
+<pre><code class="r">mycorr2 &lt;- as.data.frame(mycorr)
+class(mycorr2)
+</code></pre>
+
+<pre><code>[1] &quot;data.frame&quot;
+</code></pre>
+
+<pre><code class="r">mycorr2
+</code></pre>
+
+<pre><code>        V1       V2       V3       V4
+1  1.00000 -0.13128  0.04215 -0.11503
+2 -0.13128  1.00000 -0.06346 -0.07017
+3  0.04215 -0.06346  1.00000  0.04977
+4 -0.11503 -0.07017  0.04977  1.00000
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-69" style="background:;">
+  <hgroup>
+    <h2>Arrays</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Arrays are a set of matrices of the same <code>dim</code> and <code>class</code></li>
+<li>Arrays allow dimensions to be named</li>
+</ul>
+
+<pre><code class="r">myarray &lt;- array(1:42, dim = c(7, 3, 2), dimnames = list(c(&quot;tiny&quot;, &quot;small&quot;, 
+    &quot;medium&quot;, &quot;medium-ish&quot;, &quot;large&quot;, &quot;big&quot;, &quot;huge&quot;), c(&quot;slow&quot;, &quot;moderate&quot;, &quot;fast&quot;), 
+    c(&quot;boring&quot;, &quot;fun&quot;)))
+class(myarray)
+</code></pre>
+
+<pre><code>[1] &quot;array&quot;
+</code></pre>
+
+<pre><code class="r">dim(myarray)
+</code></pre>
+
+<pre><code>[1] 7 3 2
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-70" style="background:;">
+  <hgroup>
+    <h2>Arrays II</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">dimnames(myarray)
+</code></pre>
+
+<pre><code>[[1]]
+[1] &quot;tiny&quot;       &quot;small&quot;      &quot;medium&quot;     &quot;medium-ish&quot; &quot;large&quot;     
+[6] &quot;big&quot;        &quot;huge&quot;      
+
+[[2]]
+[1] &quot;slow&quot;     &quot;moderate&quot; &quot;fast&quot;    
+
+[[3]]
+[1] &quot;boring&quot; &quot;fun&quot;   
+</code></pre>
+
+<pre><code class="r">myarray
+</code></pre>
+
+<pre><code>, , boring
+
+           slow moderate fast
+tiny          1        8   15
+small         2        9   16
+medium        3       10   17
+medium-ish    4       11   18
+large         5       12   19
+big           6       13   20
+huge          7       14   21
+
+, , fun
+
+           slow moderate fast
+tiny         22       29   36
+small        23       30   37
+medium       24       31   38
+medium-ish   25       32   39
+large        26       33   40
+big          27       34   41
+huge         28       35   42
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-71" style="background:;">
+  <hgroup>
+    <h2>Lists</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Lists are arbitrary collections of objects. </li>
+<li>The objects do not have to be of the same type or same element or same dimensions</li>
+</ul>
+
+<pre><code class="r">mylist &lt;- list(vec = myvec, mat = mymat, arr = myarray, date = mydate)
+class(mylist)
+</code></pre>
+
+<pre><code>[1] &quot;list&quot;
+</code></pre>
+
+<pre><code class="r">length(mylist)
+</code></pre>
+
+<pre><code>[1] 4
+</code></pre>
+
+<pre><code class="r">names(mylist)
+</code></pre>
+
+<pre><code>[1] &quot;vec&quot;  &quot;mat&quot;  &quot;arr&quot;  &quot;date&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-72" style="background:;">
+  <hgroup>
+    <h2>Print a List</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">str(mylist)
+</code></pre>
+
+<pre><code>List of 4
+ $ vec : num [1:6] 5 3 5 6 1 2
+ $ mat : int [1:6, 1:6] 1 2 3 4 5 6 7 8 9 10 ...
+  ..- attr(*, &quot;dimnames&quot;)=List of 2
+  .. ..$ : chr [1:6] &quot;A&quot; &quot;B&quot; &quot;C&quot; &quot;D&quot; ...
+  .. ..$ : chr [1:6] &quot;G&quot; &quot;H&quot; &quot;I&quot; &quot;J&quot; ...
+ $ arr : int [1:7, 1:3, 1:2] 1 2 3 4 5 6 7 8 9 10 ...
+  ..- attr(*, &quot;dimnames&quot;)=List of 3
+  .. ..$ : chr [1:7] &quot;tiny&quot; &quot;small&quot; &quot;medium&quot; &quot;medium-ish&quot; ...
+  .. ..$ : chr [1:3] &quot;slow&quot; &quot;moderate&quot; &quot;fast&quot;
+  .. ..$ : chr [1:2] &quot;boring&quot; &quot;fun&quot;
+ $ date: Date[1:1], format: &quot;2012-07-20&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-73" style="background:;">
+  <hgroup>
+    <h2>Lists (II)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R has two object classification schemes S3 and S4
+
+<ul>
+<li>For S3 use <code>$</code> or <code>[[]]</code> to extract elements</li>
+<li>For S4 use <code>@</code> to extract elements</li>
+</ul></li>
+</ul>
+
+<pre><code class="r">mylist$vec
+</code></pre>
+
+<pre><code>[1] 5 3 5 6 1 2
+</code></pre>
+
+<pre><code class="r">mylist[[2]][1, 3]
+</code></pre>
+
+<pre><code>[1] 13
+</code></pre>
+
+<ul>
+<li>Where are we getting the object in the second row from?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-74" style="background:;">
+  <hgroup>
+    <h2>So what?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Matrices, lists, and arrays are useful for storing analyses results, generating reports, and doing analysis on many objects types</li>
+<li>We&#39;ll see examples of list and array manipulation later</li>
+<li>A useful tip is to use the <code>attributes</code> function to learn about the object</li>
+</ul>
+
+<pre><code class="r">attributes(mylist)
+</code></pre>
+
+<pre><code>$names
+[1] &quot;vec&quot;  &quot;mat&quot;  &quot;arr&quot;  &quot;date&quot;
+</code></pre>
+
+<pre><code class="r">attributes(myarray)[1:2][2]
+</code></pre>
+
+<pre><code>$dimnames
+$dimnames[[1]]
+[1] &quot;tiny&quot;       &quot;small&quot;      &quot;medium&quot;     &quot;medium-ish&quot; &quot;large&quot;     
+[6] &quot;big&quot;        &quot;huge&quot;      
+
+$dimnames[[2]]
+[1] &quot;slow&quot;     &quot;moderate&quot; &quot;fast&quot;    
+
+$dimnames[[3]]
+[1] &quot;boring&quot; &quot;fun&quot;   
+</code></pre>
+
+<ul>
+<li>They also provide simplified ways to get used to operating on dataframes by reducing complexity</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-75" style="background:;">
+  <hgroup>
+    <h2>Dataframes</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Dataframes are combinations of vectors of the same length, but can be of different types</li>
+</ul>
+
+<pre><code class="r">str(df[, 25:32])
+</code></pre>
+
+<pre><code>Error: object of type &#39;closure&#39; is not subsettable
+</code></pre>
+
+<ul>
+<li>Data frames must have consistent dimensions</li>
+<li>Dataframes are what we use most commonly as a &quot;dataset&quot; for analysis</li>
+<li>Dataframes are what sets R apart from other programming languages like C, C++, Python, and Perl. </li>
+<li>The dataframe structure is much more complex and much easier to use than any datastructure in these languages - though Python is catching up!</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-76" style="background:;">
+  <hgroup>
+    <h2>Converting Between Types</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>R has built in functions to allow you to force objects to move between types</li>
+<li>These follow the general form <code>as.whatIwant</code> as in <code>as.factor</code> or <code>as.table</code> or <code>as.data.frame</code></li>
+<li>You will use these commands a lot to convert output from various functions into a form you can input into a different function</li>
+<li>A good example is converting correlation matrices into dataframes so we can plot them</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-77" style="background:;">
+  <hgroup>
+    <h2>Summing it Up</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Vectors are used to store bits of data</li>
+<li>Matrices are combinations of vectors of the same length and type</li>
+<li>Matrices are most commonly used in statistical models (in the background), and for computation</li>
+<li>Arrays are stacks of matrices and are used in building multiple models or for storing complex data structures</li>
+<li>Lists are groups of R objects commonly used to combine function output in useful ways (like store model results and model data together)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-78" style="background:;">
+  <hgroup>
+    <h2>Exercises</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>Create a matrix of 5x6 dimensions. Add a vector to it (as either a row or column). Identify element 2,3. </p></li>
+<li><p>Convert the matrix to a data frame.</p></li>
+<li><p>Look at the difference between data frames and matrices.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-79" style="background:;">
+  <hgroup>
+    <h2>Other References</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><a href="https://github.com/hadley/devtools/wiki/vocabulary">An R Vocabulary for Starting Out</a></li>
+<li><a href="http://www.ats.ucla.edu/stat/r/sk/">UCLA Academic Technology Services: R Starter Kit</a></li>
+<li><a href="http://www.statmethods.net/">Quick R: Getting Started</a></li>
+<li><a href="http://www.revolutionanalytics.com/what-is-open-source-r/r-language-features/">R Features List</a></li>
+<li><a href="http://www.twotorials.com/">Video Tutorials</a></li>
+<li><a href="http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html">Google&#39;s R Style Guide</a></li>
+<li><a href="https://github.com/hadley/devtools/wiki/Style">Hadley Wickham&#39;s R Style Guide</a></li>
+<li><a href="http://www.stat.yale.edu/%7Ejay/JSM2012/PDFs/intro.pdf">JSM 2012 R Introduction by Jay Emerson</a></li>
+<li><a href="http://www.johndcook.com/R_language_for_programmers.html">Notes on R for Programmers by John Cook</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-80" style="background:;">
+  <hgroup>
+    <h2>Books</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>There are a number of great R books available for learning the beginnings of R and for learning specific statistical techniques</li>
+<li>&quot;Discovering Statistics Using R&quot; by Andy Field</li>
+<li>&quot;Applied Econometrics with R&quot; by Achim Zeileis and Christian Kleiber</li>
+<li>&quot;The Art of R Programming&quot; by Norman Matloff</li>
+<li><a href="http://www.burns-stat.com/pages/Tutor/R_inferno.pdf">The R Inferno</a></li>
+<li>The R Book by Michael J. Crawley (new version imminent)</li>
+<li>The R Cookbook</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-81" style="background:;">
+  <hgroup>
+    <h2>Session Info</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>It is good to include the session info, e.g. this document is produced with <strong>knitr</strong> version 1.2.9. Here is my session info:</p>
+
+<pre><code class="r">print(sessionInfo(), locale = FALSE)
+</code></pre>
+
+<pre><code>R version 2.15.2 (2012-10-26)
+Platform: i386-w64-mingw32/i386 (32-bit)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] eeptools_0.2    ggplot2_0.9.3.1 slidify_0.3.51 
+
+loaded via a namespace (and not attached):
+ [1] codetools_0.2-8    colorspace_1.2-2   dichromat_2.0-0   
+ [4] digest_0.6.3       evaluate_0.4.3     formatR_0.7       
+ [7] grid_2.15.2        gtable_0.1.2       knitr_1.2.9       
+[10] labeling_0.1       markdown_0.5.5     MASS_7.3-23       
+[13] munsell_0.4        plyr_1.8           proto_0.3-10      
+[16] RColorBrewer_1.0-5 reshape2_1.2.2     scales_0.2.3      
+[19] stringr_0.6.2      tools_2.15.1       whisker_0.3-2     
+[22] yaml_2.1.7        
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-82" style="background:;">
+  <hgroup>
+    <h2>Attribution and License</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This work (<span property="dct:title">R Tutorial for Education</span>, by <a href="www.jaredknowles.com" rel="dct:creator"><span property="dct:title">Jared E. Knowles</span></a>), in service of the <a href="http://www.dpi.wi.gov" rel="dct:publisher"><span property="dct:title">Wisconsin Department of Public Instruction</span></a>, is free of known copyright restrictions.
+</p>
+<p xmlns:dct="http://purl.org/dc/terms/">
+<a rel="license" href="http://creativecommons.org/publicdomain/mark/1.0/">
+<img src="http://i.creativecommons.org/p/mark/1.0/88x31.png"
+     style="border-style: none;" alt="Public Domain Mark" />
+</a>
+<br /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='R'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='What Does it Look Like?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='A Bit of Histo<strong>R</strong>y'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='John Chambers on the Philosophy of S'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='R is Born'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Why Use R'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Thoughts on Free'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='R Advantages Continued'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='R&#39;s Popularity'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='R Has an Active Web Presence'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='R Extensions'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='R Has an Active Community'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='R&#39;s Drawbacks'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='R Vocabulary'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Components of an R Setup'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Advanced R Setup'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Open Source Toolchain'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Some Notes about Maintaining R'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Self-help'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Self-help (2)'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Let&#39;s Look at RStudio'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='The Data Frame'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='A Data Frame'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='R As A Calculator'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Arithmetic Operators'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Other Key Symbols'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Comments in R'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='R Advanced Math'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Using the Workspace'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Using the Workspace (2)'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='R as a Language'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='<code>c</code> is our friend'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Language'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='More Language <del>Bugs</del> Features'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Objects'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Graphics too'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='Handling Data in R'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='Special Operators'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='Special Operators II'>
+         40
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='Special operators (III)'>
+         41
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='Special operators (IV)'>
+         42
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title='Special operators (V)'>
+         43
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=44 title='Regular Expressions'>
+         44
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=45 title='R Data Modes'>
+         45
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=46 title='Data Modes in R (numeric)'>
+         46
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=47 title='Data Modes (Character)'>
+         47
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=48 title='Data Modes (Logical)'>
+         48
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=49 title='Easier way'>
+         49
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=50 title='A Note on Vectors'>
+         50
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=51 title='Factor'>
+         51
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=52 title='Ordering the Factor'>
+         52
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=53 title='Reclassifying Factors'>
+         53
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=54 title='Defactor'>
+         54
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=55 title='Convert to Numeric?'>
+         55
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=56 title='Dates'>
+         56
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=57 title='More Dates'>
+         57
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=58 title='A few notes on dates'>
+         58
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=59 title='Other Classes'>
+         59
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=60 title='Why care so much about classes?'>
+         60
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=61 title='Data Structures in R'>
+         61
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=62 title='Vectors'>
+         62
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=63 title='Vectors 2'>
+         63
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=64 title='Matrices'>
+         64
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=65 title='Matrices II'>
+         65
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=66 title='More Matrices'>
+         66
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=67 title='Matrix Functions'>
+         67
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=68 title='Converting Matrices'>
+         68
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=69 title='Arrays'>
+         69
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=70 title='Arrays II'>
+         70
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=71 title='Lists'>
+         71
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=72 title='Print a List'>
+         72
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=73 title='Lists (II)'>
+         73
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=74 title='So what?'>
+         74
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=75 title='Dataframes'>
+         75
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=76 title='Converting Between Types'>
+         76
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=77 title='Summing it Up'>
+         77
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=78 title='Exercises'>
+         78
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=79 title='Other References'>
+         79
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=80 title='Books'>
+         80
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=81 title='Session Info'>
+         81
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=82 title='Attribution and License'>
+         82
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+   
+  </html>
