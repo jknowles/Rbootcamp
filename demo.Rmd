@@ -1,0 +1,54 @@
+---
+title       : Tutorial 1- Getting Started
+subtitle    : DPI R Bootcamp / 2013
+author      : Jared Knowles
+job         : Research Analyst, Wisconsin DPI
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight  # {highlight.js, prettify, highlight}
+hitheme     : hemisu-light      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : standalone # {standalone, draft}
+---
+
+<style>
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
+</style>
+
+```{r setup, include=FALSE}
+# set global chunk options
+opts_chunk$set(fig.path='figure/slides-', cache.path='cache/slides-', cache=TRUE,
+               comment=NA)
+# upload images automatically
+#opts_knit$set(upload.fun = imgur_upload)
+```
+
+## Self-help (2)
+- Sometimes R Help can be a bit prickly and unfriendly...
+- The most important part of getting help is being able to ask your question with a reproducible example (i.e. some short simulated data and code that doesn't do what you want)
+- Like this:
+
+```{r echo=TRUE,error=TRUE}
+foo<-c(1,"b",5,7,0)
+bar<-c(1,2,3,4,5)
+foo+bar
+```
+
+- For R Help etiquette (for the tough problems) see [the great advice here](https://github.com/hadley/devtools/wiki/Reproducibility)
+
+---
+
+## Plot Student Attributes
+
+```{r}
+require(eeptools)
+
+qplot(readSS,mathSS,data=stulevel,geom='point',alpha=I(0.3))+theme_dpi()+
+  labs(title='Test Score Relationship')+
+  geom_smooth()
+
+```
